@@ -7,9 +7,12 @@ gem 'flat_keys',     '~> 0'
 
 
 group :development do
-  gem 'rdoc',          '~> 3.12'
-  gem 'bundler',       '~> 1.0'
-  gem 'jeweler',       '~> 2.0'
-  gem 'simplecov',     '~> 0.8'
-  gem 'rspec',         '~> 2.14.1'
+  gem 'rdoc',                     '~> 3.12'
+  gem 'bundler',                  '~> 1.0'
+  gem 'jeweler',                  '~> 2.0'
+  gem 'simplecov',                '~> 0.8'
+  gem 'rspec',                    '~> 2.14.1'
+  gem 'guard-rspec',              '~> 4.2.8'
+  gem 'terminal-notifier-guard',  '~> 1.5.3'
+
 end
