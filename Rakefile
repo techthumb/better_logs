@@ -13,12 +13,11 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "better_logging"
   gem.homepage = "http://github.com/techthumb/better_logging"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Better logging for Rails request/response lifecycle.}
+  gem.description = %Q{Logging for Rails request/response lifecycle in a machine readable format (starting with Splunk)}
   gem.email = "kunal@techthumb.in"
   gem.authors = ["Kunal Parikh"]
   # dependencies defined in Gemfile
