@@ -1,0 +1,2 @@
+module ::BetterLogs::Formatters
+end

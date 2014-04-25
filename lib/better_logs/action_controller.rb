@@ -1,0 +1,2 @@
+module BetterLogs::ActionController
+end

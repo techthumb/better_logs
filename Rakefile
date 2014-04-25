@@ -13,8 +13,8 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  gem.name = "better_logging"
-  gem.homepage = "http://github.com/techthumb/better_logging"
+  gem.name = "better_logs"
+  gem.homepage = "http://github.com/techthumb/better_logs"
   gem.license = "MIT"
   gem.summary = %Q{Better logging for Rails request/response lifecycle.}
   gem.description = %Q{Logging for Rails request/response lifecycle in a machine readable format (starting with Splunk)}
@@ -32,7 +32,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "better_logging #{version}"
+  rdoc.title = "better_logs #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

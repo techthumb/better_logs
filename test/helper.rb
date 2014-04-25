@@ -28,7 +28,7 @@ require 'shoulda'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'better_logging'
+require 'better_logs'
 
 class Test::Unit::TestCase
 end

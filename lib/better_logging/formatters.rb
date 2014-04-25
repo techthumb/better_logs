@@ -1,2 +1,0 @@
-module ::BetterLogging::Formatters
-end

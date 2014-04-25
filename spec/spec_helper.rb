@@ -1,1 +1,1 @@
-require_relative '../lib/better_logging'
+require_relative '../lib/better_logs'

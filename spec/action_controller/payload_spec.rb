@@ -1,8 +1,8 @@
 require 'spec_helper'
-describe ::BetterLogging::ActionController::Payload do
+describe ::BetterLogs::ActionController::Payload do
   let(:payload) { {nested: {keys: {should: {be: {flattened: 'with dots'}}}}} }
 
-  subject { ::BetterLogging::ActionController::Payload.new(payload) }
+  subject { ::BetterLogs::ActionController::Payload.new(payload) }
 
   describe 'when payload is a nested hash' do
     it 'flattens nested keys' do

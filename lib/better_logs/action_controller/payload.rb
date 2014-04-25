@@ -1,4 +1,4 @@
-class ::BetterLogging::ActionController::Payload < DelegateClass(ActiveSupport::HashWithIndifferentAccess)
+class ::BetterLogs::ActionController::Payload < DelegateClass(ActiveSupport::HashWithIndifferentAccess)
   IGNORED_KEYS = %w(action controller)
   def initialize(payload)
     payload = payload.with_indifferent_access
