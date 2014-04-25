@@ -1,9 +1,9 @@
 language: ruby
 rvm:
-- 1.9.3
-- 2.0.0
-- 2.1.0
+  - 1.9.3
+  - 2.0.0
+  - 2.1.0
 addons:
   code_climate:
     repo_token:
-      secure: "WzO/MHWsnlmF48sp2ijt3UagPX6SOnqc8TYRWX3FqLJqQaCuX0xJTfe95t7N7b8T8BDfZFndRQzua2bn7YzJ0h0sfCLuS+PWi1G7umCSK5XKrsRAw2+OUijLQTZ6mwwkYVB8rzet071P+NMRJdKMXJ1/quIzxpFy6ODf6fEzwp0="
+      secure: "JjyOS59sL8FJAac92QyVm7COE804bQc/eu5pjpew9wudQ84Cn+Yt4aI+a1HUydIew6sIfLOAHU3oH6ufMBf/Ks5aVdPfOPdbxcW3gktgjvVV5AQ53H5OAet62b5MMa2bc9CABIhgun3RZE1CjF3M0q4XJQEiogDNWOczAnJCCM4="
