@@ -1,9 +1,9 @@
 = better_logs
 
-Description goes here.
+Logging for Rails request/response lifecycle in a machine readable format (starting with Splunk) — Edit
 
 == Contributing to better_logs
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
@@ -16,4 +16,3 @@ Description goes here.
 
 Copyright (c) 2014 Kunal Parikh. See LICENSE.txt for
 further details.
-
