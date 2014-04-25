@@ -1,4 +1,6 @@
 language: ruby
+cache:
+  -bundler
 rvm:
   - 1.9.3
   - 2.0.0
@@ -6,4 +8,4 @@ rvm:
 addons:
   code_climate:
     repo_token:
-      secure: "JjyOS59sL8FJAac92QyVm7COE804bQc/eu5pjpew9wudQ84Cn+Yt4aI+a1HUydIew6sIfLOAHU3oH6ufMBf/Ks5aVdPfOPdbxcW3gktgjvVV5AQ53H5OAet62b5MMa2bc9CABIhgun3RZE1CjF3M0q4XJQEiogDNWOczAnJCCM4="
+      secure: "IBQdXqdWdfTPduZhn4GJ/K0gcPY+1pJRH8AQvnoRTHWFrtOUAiLjPDycoyGA46BG4Zp5OOLeOloPvgctN80I7utVlg43bqZUgykCuBQRhW2yVN1eoBMDhhQ1zhDAuTCmI4Cpnj2ly1xQF4sKNxTOZNZmk+MTtEurFbewju+a518="
