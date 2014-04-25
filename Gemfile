@@ -12,5 +12,5 @@ group :development do
   gem 'rspec',                     '~> 2.14'
   gem 'guard-rspec',               '~> 4.2'
   gem 'terminal-notifier-guard',   '~> 1.5'
-  gem 'coveralls',                 '~> 0.7', require: false
+  gem 'codeclimate-test-reporter', '~> 0.3', require: nil
 end
