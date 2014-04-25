@@ -1,5 +1,5 @@
 {<img src="https://travis-ci.org/techthumb/better_logs.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/techthumb/better_logs]
-
+{<img src="https://badge.fury.io/rb/better_logs.svg" alt="Gem Version" />}[http://badge.fury.io/rb/better_logs]
 = BetterLogs
 
 Logging for Rails request/response lifecycle in a machine readable format (starting with Splunk) — Edit
