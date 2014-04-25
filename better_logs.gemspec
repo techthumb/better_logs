@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "better_logs.gemspec",
     "lib/better_logs.rb",
     "lib/better_logs/action_controller.rb",
     "lib/better_logs/action_controller/log_subscriber.rb",
@@ -54,39 +55,39 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<activesupport>, ["~> 4.0"])
       s.add_runtime_dependency(%q<actionpack>, ["~> 4.0"])
       s.add_runtime_dependency(%q<railties>, ["~> 4.0"])
-      s.add_runtime_dependency(%q<flat_keys>, ["~> 0"])
+      s.add_runtime_dependency(%q<flat_keys>, ["~> 0.0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 2.0"])
       s.add_development_dependency(%q<simplecov>, ["~> 0.8"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.14.1"])
-      s.add_development_dependency(%q<guard-rspec>, ["~> 4.2.8"])
-      s.add_development_dependency(%q<terminal-notifier-guard>, ["~> 1.5.3"])
+      s.add_development_dependency(%q<rspec>, ["~> 2.14"])
+      s.add_development_dependency(%q<guard-rspec>, ["~> 4.2"])
+      s.add_development_dependency(%q<terminal-notifier-guard>, ["~> 1.5"])
     else
       s.add_dependency(%q<activesupport>, ["~> 4.0"])
       s.add_dependency(%q<actionpack>, ["~> 4.0"])
       s.add_dependency(%q<railties>, ["~> 4.0"])
-      s.add_dependency(%q<flat_keys>, ["~> 0"])
+      s.add_dependency(%q<flat_keys>, ["~> 0.0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
       s.add_dependency(%q<jeweler>, ["~> 2.0"])
       s.add_dependency(%q<simplecov>, ["~> 0.8"])
-      s.add_dependency(%q<rspec>, ["~> 2.14.1"])
-      s.add_dependency(%q<guard-rspec>, ["~> 4.2.8"])
-      s.add_dependency(%q<terminal-notifier-guard>, ["~> 1.5.3"])
+      s.add_dependency(%q<rspec>, ["~> 2.14"])
+      s.add_dependency(%q<guard-rspec>, ["~> 4.2"])
+      s.add_dependency(%q<terminal-notifier-guard>, ["~> 1.5"])
     end
   else
     s.add_dependency(%q<activesupport>, ["~> 4.0"])
     s.add_dependency(%q<actionpack>, ["~> 4.0"])
     s.add_dependency(%q<railties>, ["~> 4.0"])
-    s.add_dependency(%q<flat_keys>, ["~> 0"])
+    s.add_dependency(%q<flat_keys>, ["~> 0.0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
     s.add_dependency(%q<jeweler>, ["~> 2.0"])
     s.add_dependency(%q<simplecov>, ["~> 0.8"])
-    s.add_dependency(%q<rspec>, ["~> 2.14.1"])
-    s.add_dependency(%q<guard-rspec>, ["~> 4.2.8"])
-    s.add_dependency(%q<terminal-notifier-guard>, ["~> 1.5.3"])
+    s.add_dependency(%q<rspec>, ["~> 2.14"])
+    s.add_dependency(%q<guard-rspec>, ["~> 4.2"])
+    s.add_dependency(%q<terminal-notifier-guard>, ["~> 1.5"])
   end
 end
 
