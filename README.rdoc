@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/techthumb/better_logs.svg?branch=master)](https://travis-ci.org/techthumb/better_logs)
+
 = better_logs
 
 Logging for Rails request/response lifecycle in a machine readable format (starting with Splunk) — Edit
