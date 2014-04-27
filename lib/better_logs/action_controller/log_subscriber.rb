@@ -1,9 +1,9 @@
 class ::BetterLogs::ActionController::LogSubscriber < ActiveSupport::LogSubscriber
   attr_reader :formatter, :logger
 
-  def initialize(formatter=::BetterLogs::Formatters::KeyValueFormatter.new, logger = ::Rails.logger)
+  def initialize(formatter: ::BetterLogs::Formatters::KeyValueFormatter.new, logger: ::Rails.logger)
     @formatter = formatter
-    @logger = logger
+    @logger    = logger
   end
 
   def process_action(event)
