@@ -1,14 +1,23 @@
 require 'spec_helper'
 describe ::BetterLogs::ActionController::Payload do
-  let(:payload) { {nested: {keys: {should: {be: {flattened: 'with dots'}}}}} }
 
   subject { ::BetterLogs::ActionController::Payload.new(payload) }
 
   describe 'when payload is a nested hash' do
+    let(:payload) { {nested: {keys: {should: {be: {flattened: 'with dots'}}}}} }
     it 'flattens nested keys' do
       subject.should == { 'nested.keys.should.be.flattened' => 'with dots' }
     end
   end
+
+  describe 'when payload includes key :exception' do
+    let(:payload) { {exception: 'some exception'} }
+    it 'should add a status of 500' do
+      subject.should include('status')
+      subject['status'].should == 500
+    end
+  end
+
 
   %w(action controller).each do | key |
     describe "when payload includes key :#{key}" do
