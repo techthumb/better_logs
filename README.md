@@ -1,6 +1,6 @@
 # BetterLogs [![Build Status](https://travis-ci.org/techthumb/better_logs.svg?branch=v0.1.0)](https://travis-ci.org/techthumb/better_logs) [![Gem Version](https://badge.fury.io/rb/better_logs.svg)](http://badge.fury.io/rb/better_logs) [![Code Climate](https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/badges/1196b8f5d38c79f87546/gpa.png)](https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/feed) [![Code Climate](https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/badges/1196b8f5d38c79f87546/coverage.png)](https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/feed)
 
-Better Logs adds and an additional log line for all HTTP requests.
+Better Logs adds an additional log line for all HTTP requests.
 Currently, it logs data in key=value pairs to allow for Splunk indexing.
 
 ```
