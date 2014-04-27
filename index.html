@@ -30,32 +30,39 @@
 
       </header>
       <section>
-        <p><a href="https://travis-ci.org/techthumb/better_logs"><img src="https://travis-ci.org/techthumb/better_logs.svg?branch=v0.1.0" alt="Build Status"></a>
-<a href="http://badge.fury.io/rb/better_logs"><img src="https://badge.fury.io/rb/better_logs.svg" alt="Gem Version"></a>
-<a href="https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/feed"><img src="https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/badges/1196b8f5d38c79f87546/gpa.png" alt="Code Climate"></a>
-<a href="https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/feed"><img src="https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/badges/1196b8f5d38c79f87546/coverage.png" alt="Code Climate"></a></p>
+        <h1>
+<a name="betterlogs----" class="anchor" href="#betterlogs----"><span class="octicon octicon-link"></span></a>BetterLogs <a href="https://travis-ci.org/techthumb/better_logs"><img src="https://travis-ci.org/techthumb/better_logs.svg?branch=v0.1.0" alt="Build Status"></a> <a href="http://badge.fury.io/rb/better_logs"><img src="https://badge.fury.io/rb/better_logs.svg" alt="Gem Version"></a> <a href="https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/feed"><img src="https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/badges/1196b8f5d38c79f87546/gpa.png" alt="Code Climate"></a> <a href="https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/feed"><img src="https://codeclimate.com/repos/535a5dcae30ba03fdc00efe2/badges/1196b8f5d38c79f87546/coverage.png" alt="Code Climate"></a>
+</h1>
 
-<h1>
-<a name="betterlogs" class="anchor" href="#betterlogs"><span class="octicon octicon-link"></span></a>BetterLogs</h1>
+<p>Better Logs adds and an additional log line for all HTTP requests.
+Currently, it logs data in key=value pairs to allow for Splunk indexing.</p>
 
-<p>Logging for Rails request/response lifecycle in a machine readable format (starting with Splunk)</p>
+<pre><code>format=html method=GET path=/ status=200  view_runtime=45.67 db_runtime=23.45 controller=rails/welcome action=index
+</code></pre>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this to your Gemfile</p>
+
+<div class="highlight highlight-ruby"><pre><span class="n">gem</span> <span class="s1">'better_logs'</span>
+</pre></div>
+
+<h2>
+<a name="get-in-touch" class="anchor" href="#get-in-touch"><span class="octicon octicon-link"></span></a>Get in touch!</h2>
+
+<p>If you're using <code>better_logs</code>, I'd love to hear from you. Drop me a line and tell me what you think at: <code>kunal+better_logs@techthumb.in</code></p>
 
 <h2>
 <a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
 
-<ul>
-<li>Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.</li>
-<li>Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.</li>
-<li>Fork the project.</li>
-<li>Start a feature/bugfix branch.</li>
-<li>Commit and push until you are happy with your contribution.</li>
-<li>Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.</li>
-<li>Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.</li>
-</ul><h2>
-<a name="copyright" class="anchor" href="#copyright"><span class="octicon octicon-link"></span></a>Copyright</h2>
-
-<p>Copyright (c) 2014 Kunal Parikh. See LICENSE.txt for
-further details.</p>
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
       </section>
       <footer>
         <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
