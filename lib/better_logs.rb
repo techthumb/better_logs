@@ -2,6 +2,7 @@ module ::BetterLogs
 end
 
 require 'flat_keys'
+require 'rails'
 require 'active_support'
 require 'active_support/core_ext/hash/indifferent_access'
 require 'action_pack'
