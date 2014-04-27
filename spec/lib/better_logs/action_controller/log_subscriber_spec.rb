@@ -10,16 +10,12 @@ describe ::BetterLogs::ActionController::LogSubscriber do
   end
 
   context 'logger' do
-    subject { described_class.new.logger }
-
-    before { Rails.stub(:logger).and_return(rails_logger) }
-    let(:rails_logger) { double(ActiveSupport::Logger) }
+    before              { Rails.stub(:logger).and_return(rails_logger) }
+    let(:rails_logger)  { double(ActiveSupport::Logger) }
+    subject             { described_class.new.logger }
 
     it "defaults to 'Rails.logger'" do
-      subject.should === rails_logger
+      should === rails_logger
     end
-  end
-
-  describe '#process_action' do
   end
 end
