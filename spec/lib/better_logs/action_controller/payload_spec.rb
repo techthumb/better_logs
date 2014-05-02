@@ -4,9 +4,9 @@ describe ::BetterLogs::ActionController::Payload do
   subject { ::BetterLogs::ActionController::Payload.new(payload) }
 
   describe 'when payload is a nested hash' do
-    let(:payload) { {nested: {keys: {should: {be: {flattened: 'with dots'}}}}} }
+    let(:payload) { {nested: {keys: {should: {be: {flattened: 'with underscores'}}}}} }
     it 'flattens nested keys' do
-      subject.should == { 'nested.keys.should.be.flattened' => 'with dots' }
+      subject.should == { 'nested_keys_should_be_flattened' => 'with underscores' }
     end
   end
 
