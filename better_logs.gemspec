@@ -11,12 +11,12 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Kunal Parikh"]
-  s.date = "2014-04-27"
+  s.date = "2014-05-02"
   s.description = "Logging for Rails request/response lifecycle in a machine readable format (starting with Splunk)"
   s.email = "kunal@techthumb.in"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     ".coveralls.yml",
@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
     "Gemfile.lock",
     "Guardfile",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "VERSION",
     "better_logs.gemspec",
@@ -45,7 +45,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/techthumb/better_logs"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.2.1"
+  s.rubygems_version = "2.2.2"
   s.summary = "Better logging for Rails request/response lifecycle."
 
   if s.respond_to? :specification_version then

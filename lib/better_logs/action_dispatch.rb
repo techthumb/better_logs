@@ -1,0 +1,2 @@
+module BetterLogs::ActionDispatch
+end

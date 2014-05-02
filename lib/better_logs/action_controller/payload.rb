@@ -8,6 +8,6 @@ class ::BetterLogs::ActionController::Payload < DelegateClass(ActiveSupport::Has
       data[:controller] = data[:params].delete(:controller)
       data[:action] = data[:params].delete(:action)
     end
-    super(data.flat_keys)
+    super(data.flat_keys('_'))
   end
 end
