@@ -34,12 +34,17 @@ Gem::Specification.new do |s|
     "lib/better_logs/action_controller.rb",
     "lib/better_logs/action_controller/log_subscriber.rb",
     "lib/better_logs/action_controller/payload.rb",
+    "lib/better_logs/action_dispatch.rb",
+    "lib/better_logs/action_dispatch/log_subscriber.rb",
+    "lib/better_logs/action_dispatch/payload.rb",
     "lib/better_logs/formatters.rb",
     "lib/better_logs/formatters/key_value_formatter.rb",
     "lib/better_logs/initializer.rb",
     "lib/better_logs/railtie.rb",
     "spec/lib/better_logs/action_controller/log_subscriber_spec.rb",
     "spec/lib/better_logs/action_controller/payload_spec.rb",
+    "spec/lib/better_logs/action_dispatch/log_subscriber_spec.rb",
+    "spec/lib/better_logs/action_dispatch/payload_spec.rb",
     "spec/lib/better_logs/formatters/key_value_formatter_spec.rb",
     "spec/spec_helper.rb"
   ]
@@ -56,6 +61,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<actionpack>, ["~> 4.0"])
       s.add_runtime_dependency(%q<railties>, ["~> 4.0"])
       s.add_runtime_dependency(%q<flat_keys>, ["~> 0.0"])
+      s.add_runtime_dependency(%q<useragent>, ["~> 0.10"])
       s.add_development_dependency(%q<rdoc>, ["~> 4.1"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 2.0"])
@@ -68,6 +74,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<actionpack>, ["~> 4.0"])
       s.add_dependency(%q<railties>, ["~> 4.0"])
       s.add_dependency(%q<flat_keys>, ["~> 0.0"])
+      s.add_dependency(%q<useragent>, ["~> 0.10"])
       s.add_dependency(%q<rdoc>, ["~> 4.1"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
       s.add_dependency(%q<jeweler>, ["~> 2.0"])
@@ -81,6 +88,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<actionpack>, ["~> 4.0"])
     s.add_dependency(%q<railties>, ["~> 4.0"])
     s.add_dependency(%q<flat_keys>, ["~> 0.0"])
+    s.add_dependency(%q<useragent>, ["~> 0.10"])
     s.add_dependency(%q<rdoc>, ["~> 4.1"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
     s.add_dependency(%q<jeweler>, ["~> 2.0"])
