@@ -3,8 +3,9 @@ class ::BetterLogs::ActionDispatch::Payload < DelegateClass(ActiveSupport::HashW
     request = payload[:request]
     user_agent = UserAgent.parse(request.headers['HTTP_USER_AGENT'] || '')
     data = {
-      remote_ip: request.remote_ip,
-      browser:   {
+      remote_ip:  request.remote_ip,
+      request_id: request.uuid,
+      browser:    {
         name:     user_agent.browser,
         platform: user_agent.platform,
         version:  user_agent.version.to_s
