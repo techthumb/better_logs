@@ -3,9 +3,9 @@ class ::BetterLogs::ActionController::LogSubscriber < ActiveSupport::LogSubscrib
 
   def initialize(formatter = ::BetterLogs::Formatters::KeyValueFormatter.new,
                  logger    = ::Rails.logger)
+    super()
     @formatter = formatter
     @logger    = logger
-    super
   end
 
   def process_action(event)

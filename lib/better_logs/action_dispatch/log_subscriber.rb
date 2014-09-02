@@ -3,9 +3,9 @@ class ::BetterLogs::ActionDispatch::LogSubscriber < ActiveSupport::LogSubscriber
 
   def initialize(formatter = ::BetterLogs::Formatters::KeyValueFormatter.new,
                  logger    = ::Rails.logger)
+    super()
     @formatter = formatter
     @logger    = logger
-    super
   end
 
   def request(event)
