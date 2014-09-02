@@ -5,6 +5,7 @@ class ::BetterLogs::ActionController::LogSubscriber < ActiveSupport::LogSubscrib
                  logger    = ::Rails.logger)
     @formatter = formatter
     @logger    = logger
+    super
   end
 
   def process_action(event)
