@@ -81,7 +81,7 @@ GEM
     multi_json (1.9.3)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
-    nio4r (1.0.0)
+    nio4r (2.1.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     oauth2 (0.9.3)
@@ -146,3 +146,6 @@ DEPENDENCIES
   rspec (~> 2.14)
   terminal-notifier-guard (~> 1.5)
   useragent (~> 0.10)
+
+BUNDLED WITH
+   1.14.6
