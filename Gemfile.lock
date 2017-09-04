@@ -66,7 +66,7 @@ GEM
       nokogiri (>= 1.5.10)
       rake
       rdoc
-    json (1.8.1)
+    json (1.8.6)
     jwt (0.1.11)
       multi_json (>= 1.5)
     listen (2.7.3)
@@ -148,4 +148,4 @@ DEPENDENCIES
   useragent (~> 0.10)
 
 BUNDLED WITH
-   1.14.6
+   1.15.4
