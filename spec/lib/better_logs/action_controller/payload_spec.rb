@@ -6,15 +6,15 @@ describe ::BetterLogs::ActionController::Payload do
   describe 'when payload is a nested hash' do
     let(:payload) { {nested: {keys: {should: {be: {flattened: 'with underscores'}}}}} }
     it 'flattens nested keys' do
-      subject.should == { 'nested_keys_should_be_flattened' => 'with underscores' }
+      expect(subject).to eq({ 'nested_keys_should_be_flattened' => 'with underscores' })
     end
   end
 
   describe 'when payload includes key :exception' do
     let(:payload) { {exception: 'some exception'} }
     it 'should add a status of 500' do
-      subject.should include('status')
-      subject['status'].should == 500
+      expect(subject).to include('status')
+      expect(subject['status']).to eq(500)
     end
   end
 
@@ -23,7 +23,7 @@ describe ::BetterLogs::ActionController::Payload do
     describe "when payload includes key :#{key}" do
       let(:payload) { {"#{key}" => :some_value} }
       it 'should remove the key' do
-        subject.should_not include(key)
+        expect(subject).not_to include(key)
       end
     end
   end
@@ -34,9 +34,9 @@ describe ::BetterLogs::ActionController::Payload do
         let(:payload) { {params: {"#{key}" => :some_value, another: :value}} }
 
         it 'should move the key to root level' do
-          subject.should_not include("params.#{key}")
-          subject.should include(key)
-          subject[key].should == :some_value
+          expect(subject).not_to include("params.#{key}")
+          expect(subject).to include(key)
+          expect(subject[key]).to eq(:some_value)
         end
       end
     end

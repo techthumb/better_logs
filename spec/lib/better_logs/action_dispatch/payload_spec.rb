@@ -15,9 +15,11 @@ describe ::BetterLogs::ActionDispatch::Payload do
 
   subject { OpenStruct.new(described_class.new(payload)) }
 
-  its(:remote_ip)         { should == remote_ip       }
-  its(:request_id)        { should == uuid            }
-  its(:browser_name)      { should == 'Chrome'        }
-  its(:browser_platform)  { should == 'Macintosh'     }
-  its(:browser_version)   { should == '34.0.1847.131' }
+  it 'subject should contain correct params' do
+    expect(subject.remote_ip).to eq(remote_ip)
+    expect(subject.request_id).to eq(uuid)
+    expect(subject.browser_name).to eq('Chrome')
+    expect(subject.browser_platform).to eq('Macintosh')
+    expect(subject.browser_version).to eq('34.0.1847.131')
+  end
 end

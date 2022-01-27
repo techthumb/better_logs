@@ -10,7 +10,7 @@ describe ::BetterLogs::ActionController::LogSubscriber do
   end
 
   context 'logger' do
-    before              { Rails.stub(:logger).and_return(rails_logger) }
+    before              { allow(Rails).to receive(:logger).and_return(rails_logger) }
     let(:rails_logger)  { double(ActiveSupport::Logger) }
     subject             { described_class.new.logger }
 
